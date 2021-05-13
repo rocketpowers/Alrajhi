@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    
+</head>
+<title>Formulario login</title>
+<meta charset="utf-8"/>
+<!--reload da pag ociosidade-->
+<meta http-equiv="refresh" content="20">
+<script src="acesso.js"></script>
+<style>
+body{
+
+background-color: rgb(41, 44, 43);
+font-size:16px;
+font-family: Arial, Helvetica, sans-serif;
+color: antiquewhite;
+}
+h1{
+
+font-size: 32px;
+text-align: center;
+padding: 20px;
+}
+
+h2{
+font-size: 24px;
+color: darksalmon;
+
+
+}
+
+
+</style>
+
+<body>
+<h1>formulario</h1>
+<h2>preencha os dados</h2>
+<fieldset>
+<legend>aceess restrict</legend>
+
+<form name="form">
+    
+    <!--autocomplete seguranca-->
+    Nome:<input type="text" name="nome" autocomplete="off"><br><br>
+
+    Senha:<input tye="password" name="senha" autocomplete="off"><br><br>
+
+    <input type="button" name="botao" value="Login" onclick="acesso(this.form)">
+
+    <input type="reset" name="clean" value="clean">
+
+</form>
+</fieldset>
+</body>
+</html>
